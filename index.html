@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/awesome/css/all.min.css">
+    <link href="Vendor/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mua bán sách cũ</title>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="">
+                    <img src="./img/logo1.png" alt="">
+                </a>
+            </div>
+            <div class="search">
+                <div class="category">
+                    <a href="">Tất cả <i class="fa fa-angle-down"></i></a>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Tìm sản phẩm, danh mục">
+
+                </div>
+                <div class="button">
+                    <button type="button" class="btn btn-primary">
+                        <a href="search.html"><i class="fas fa-search"></i></a>
+                    </button>
+                </div>
+
+            </div>
+            <div class="info">
+                <div class="theodoi" id="topBanHang">
+                    <div class="img">
+                        <img src="./img/icon-stores.png" alt="">
+                    </div>
+                    <a href="#" onclick="BanHangFunc();"> Bán hàng Notebook</a>
+                    <div id="divBanHangNotebook" style="display: none;">
+                         <a href="#" onclick="TaoDon()"><img src="./img/create.png" style="width: 11%;"> Tạo đơn hàng</a> <br>
+                         <a href="#" onclick="LichSuTaoDon()"><img src="./img/history.png" style="width: 11%;"> Lịch sử giao dịch</a>
+                    </div>
+                </div>
+                <div class="dangnhap">
+                    <div class="img">
+                        <img src="./img/icon_login.jpg" alt="">
+                    </div>
+                    <a href="login.html"></i> Đăng nhập</a>
+                </div>
+                <div class="giohang">
+                    <div class="img">
+                        <img src="./img/cart-icon.png" alt="">
+                    </div>
+                    <a href="#" onclick="GioHangFunc();">Giỏ hàng</a>
+                    <div id="divGioHang" style="display: none;">
+                        <a href="pay.html"><img src="./img/cart-icon.png" style="width: 11%;"> Giỏ hàng <img src="./img/gh.png" style="width: 9%;margin-top: -13px;" > </a> <br>
+                        <a href="#" onclick="LichSuMuaHang()"><img src="./img/history.png" style="width: 11%;"> Lịch sử mua hàng</a>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="head">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <div class="ads">
+                <img src="img/Banner3.jpg" alt="">
+            </div>
+        </div> -->
+    </header>
+
+    <div class="body">
+        <div class="left">
+            <div class="danhmuc">
+                <p> <i class="fas fa-bars" style="float: left; margin: 1px 7px; padding: 4px;"></i> Danh mục sản phẩm
+                </p>
+                <ul>
+                    <li> <a href="sachcu.html"> SÁCH CŨ NOTEBOOK <i class="fas fa-angle-right"
+                                style="float: right;padding-right: 10px;"></i></a></li>
+                    <li> <a href="sachmoi.html"> SÁCH MỚI <i class="fas fa-angle-right"
+                                style="float: right;padding-right: 10px;"></i></a></li>
+                    <li> <a href="sachquy.html"> SÁCH QUÝ HIẾM </a></li>
+                    <li> <a href="sachkd.html"> SÁCH KINH DOANH </a></li>
+                    <li> <a href="sachkn.html"> SÁCH KĨ NĂNG </a></li>
+                    <li> <a href="sachndc.html"> SÁCH NUÔI DẠY CON </i></a></li>
+                    <li> <a href="sachvh.html"> SÁCH VĂN HỌC </a></li>
+                    <li> <a href="sachtd.html"> SÁCH TỪ ĐIỂN </a></li>
+                    <li> <a href="sachngoaingu.html"> SÁCH NGOẠI NGỮ <i class="fas fa-angle-right"
+                                style="float: right;padding-right: 10px;"></i></a></li>
+                    <li> <a href="vpp.html"> VĂN PHÒNG PHẨM </a></li>
+
+                </ul>
+            </div>
+            <div class="quangcao" id="quangcao" style="display: block;">
+                <div class="img">
+                    <img src="./img/banner-quangcao.jpg" alt="">
+                    
+                </div>
+                <div class="delete">
+                    <img src="./img/delete.png" alt="" onclick="Close();">
+                </div>
+               
+            </div>
+           
+            <div class="sdt">
+                <div class="img">
+                    <a href="ChatBox/index.html" target="_blank">
+                        <img src="./img/sdt.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <nav class="menu">
+                <ul>
+                    <li><a href="">TRANG CHỦ</a></li>
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="sanpham.html">SẢN PHẨM <i class="fa fa-angle-down"></i></a></li>
+                    <li><a href="">THANH TOÁN - VẬN CHUYỂN</a></li>
+                    <li><a href="Tintuc.html">TIN TỨC</a></li>
+                    <li><a href="">BẢNG XẾP HẠNG</a></li>
+                    <li><a href="">THÀNH VIÊN</a></li>
+                </ul>
+                <div class="search">
+                    <div id="translate_select"></div>
+                </div>
+            </nav>
+            <main style="margin-left: 8px;">
+                <div class="slideshow">
+                    <div id="myslider" class="carousel" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myslider" data-slide-to="0" class="active"></li>
+                            <li data-target="#myslider" data-slide-to="1"></li>
+                            <li data-target="#myslider" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/baner1.jpg" />
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="./img/baner2.jpg" />
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="./img/baner3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="breaking-new">
+                    <h4>SÁCH GIÁO KHOA</h4>
+                </div>
+                <div class="main">
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/gk1.jpg" />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Bé chinh phục toán học
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">20,000 đồng</span>
+                            <span class="thought">25,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/sp5.jpg" alt="" />
+                        </a>
+
+                        <h4>
+                            <a href="detail.html">Luyện thi OLYMPIC toán học
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">55,000 đồng</span>
+                            <span class="thought">65,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/gk3.jpg" />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Tiếng Việt lớp 1
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">40,000 đồng</span>
+                            <span class="thought">50,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/gk4.jpg" />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Tiếng Việt lớp 5
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">40,000 đồng</span>
+                            <span class="thought">50,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/sp1.jpg " />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Cha già cha nghèo
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">30,000 đồng</span>
+                            <span class="thought">40,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/sp6.jpg" />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Đánh thức tài năng toán học
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">55,000 đồng</span>
+                            <span class="thought">85,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/sp2.jpg" />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Tuổi trẻ đáng giá bao nhiêu
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">50,000 đồng</span>
+                            <span class="thought">70,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/sp3.jpg" />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Cho tôi xin một vé đi tuổi thơ
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">40,000 đồng</span>
+                            <span class="thought">50,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="breaking-new">
+                    <h4>SÁCH KHOA HỌC</h4>
+                </div>
+                <div class="main">
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/skh1.jpg" />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Dã ngoại thảnh thơi
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">70,000 đồng</span>
+                            <span class="thought">75,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/gk2.jpg" />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Tài chính cá nhân
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">60,000 đồng</span>
+                            <span class="thought">75,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/skh3.jpg" />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Học bổng lãnh đạo
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">45,000 đồng</span>
+                            <span class="thought">50,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/skh5.jpg" />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Cây cối diệu kì
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">40,000 đồng</span>
+                            <span class="thought">45,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/skh4.jpg" />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Học cách học
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">75,000 đồng</span>
+                            <span class="thought">80,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/skh6.jpg" />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Sinh vật sống
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">45,000 đồng</span>
+                            <span class="thought">50,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/skh7.jpg" />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Cơ thể động vật
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">50,000 đồng</span>
+                            <span class="thought">60,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                    <div class="item-product">
+                        <a href="detail.html" class="image">
+                            <img src="./img/skh8.jpg" />
+                        </a>
+                        <h4>
+                            <a href="detail.html">Học trường chuyên- Góc nhìn đa chiều
+                            </a>
+                        </h4>
+                        <p>
+                            <span class="price">90,000 đồng</span>
+                            <span class="thought">120,000 đồng</span>
+                        </p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
+                        <p>
+                            <a href="pay.html" class="btn shopping">Đặt hàng</a>
+                            <a href="detail.html" class="btn view">Chi tiết</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="adv">
+                    <div class="advleft">
+                        <img src="./img/quangcao1.jpg" alt="Quảng Cáo">
+                    </div>
+                    <div class="advright">
+                        <img src="./img/quangcao2.png" alt="Quảng Cáo">
+                    </div>
+
+                </div>
+                <div class="new">
+                    <h4>THƯƠNG HIỆU SẢN PHẨM</h4>
+                </div>
+
+                <div class="trademark">
+                    <div class="mark">
+                        <a href="#"><img src="./img/abibas1.png" alt=""></a>
+                    </div>
+                    <div class="mark">
+                        <a href="#"><img src="./img/dolca-cabana1.png" alt=""></a>
+                    </div>
+                    <div class="mark">
+                        <a href="#"><img src="./img/chamel1.png" alt=""></a>
+                    </div>
+                    <div class="mark">
+                        <a href="#"><img src="./img/guci1.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="news-judge">
+                    <div class="left">
+                        <h4>TIN TỨC</h4>
+                        <div class="news">
+                            <div class="img">
+
+                            </div>
+                            <div class="info">
+                                <h5>LỢI ÍCH CỦA VIỆC ĐỌC SÁCH</h5>
+                                <p>Sách chính là người bạn quý giá. Sách chính là kiến thức vô hạn. Nhờ có sách mà...
+                                </p>
+
+                                <p><a href="" class="btn shopping">Đọc thêm </a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="right">
+                        <h4>Đánh giá</h4>
+                        <div class="judge">
+                            <div class="img">
+                                <img src="./img/danhgia1.jpg" alt="">
+                            </div>
+                            <div class="info">
+
+                                <p>Hoàng hà: Rất hài lòng về trang Web này</p>
+                                <p>Bích Phương: Tôi không vào xem được đơn hàng của,THƯỜNG XUYÊN BỊ lỗi, cần sửa lại...
+                                </p>
+                                <p><a href="" class="btn shopping">Bình luận </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bot">
+                    <div class="left">
+                        <i class="fa fa-hand-holding-heart"></i>
+                        <p><span style="color: red;">100% HÀI LÒNG</span> ĐẢM BẢO</p>
+                    </div>
+                    <div class="mid">
+                        <i class="fa fa-bus-alt"></i>
+                        <p><span style="color: #3bc15e;">MIỄN PHÍ VẬN CHUYỂN</span> TRÊN TẤT CẢ SẢN PHẨM</p>
+                    </div>
+                    <div class="right">
+                        <i class="fa fa-gift"></i>
+                        <p><span style="color:#ff6a00;">MUA NGON MỖI NGÀY</span></br> MUA NGAY</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="ad">
+                <h6>Về Chúng Tôi</h6>
+                <p>Công ty cổ phần Notebook-Mua bán sách cũ online
+                    Với mục tiêu tạo ra những trải nghiệm mua sắm trực tuyến tuyệt vời, Notebook.com luôn nỗ lực không
+                    ngừng nhằm nâng cao chất lượng dịch vụ. Khi mua hàng qua mạng tại Notebook.com khách hàng sẽ được
+                    hưởng các tiện ích như sau:
+                    Dịch vụ chăm sóc khách hàng tận tình trước-trong-sau khi mua hàng.
+                    Mức giá cạnh tranh, rẻ so với thị trường
+                   Nhiều mã giảm giá, ưu đãi.
+                    Uy tín trong giao dịch</p>
+                <a href="">
+                    <li class="fab fa-facebook"></li>
+                </a>
+                <a href=""><i class="fa fa-dove"></i></a>
+                <a href="">
+                    <li class="fab fa-youtube"></li>
+                </a>
+                <a href="">
+                    <li class="fab fa-instagram"></li>
+                </a>
+                <a href="">
+                    <li class="fab fa-google"></li>
+                </a>
+            </div>
+            <div class="service">
+                <h6>Dịch Vụ</h6>
+                <ul>
+                    <li><a href="">Tài khoản tôi</a></li>
+                    <li><a href="">Lịch sử đơn hàng</a></li>
+                    <li><a href="">Danh sách mong muốn</a></li>
+                    <li><a href="">Liên hệ nhà cung cấp</a></li>
+                    <li><a href="">Trang nhất</a></li>
+                    <li><a href="">Thể loại Virtuemart</a></li>
+                </ul>
+            </div>
+            <div class="info">
+                <h6>Thông tin</h6>
+                <ul>
+                    <li><a href="">Về chúng tôi</a></li>
+                    <li><a href="">Sưu tập mới</a></li>
+                    <li><a href="">Bán chạy nhất</a></li>
+                    <li><a href="">Nhà sản xuất</a></li>
+                    <li><a href="">Chính sách bảo mật</a></li>
+                    <li><a href="">Điều khoản và điều kiện</a></li>
+                </ul>
+            </div>
+            <div class="dk">
+                <h6>Đăng Kí Nhận Thông Báo</h6>
+                <p>Đăng ký nhận bản tin của chúng tôi và nhận các ưu đãi độc quyền mà bạn sẽ không tìm thấy bất cứ nơi
+                    nào khác trực tiếp đến hộp thư đến của bạn!</p>
+                <input type="mail" placeholder="Enter your Email...">
+            </div>
+        </div>
+    </footer>
+    <script type='text/javascript' src="vendor/bootstrap/jquery.min.js"></script>
+    <script type='text/javascript' src="vendor/bootstrap/popper.min.js"></script>
+    <script type='text/javascript' src="vendor/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'vi'}, 'translate_select');
+        }
+    </script>
+    <script>
+        function BanHangFunc()
+        {
+            var x = document.getElementById("divBanHangNotebook");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function GioHangFunc()
+        {
+            var x = document.getElementById("divGioHang");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function Close()
+        {
+            
+            var x = document.getElementById("quangcao");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        
+        
+        function TaoDon()
+        {
+            alert("Bạn vừa tạo đơn");
+        }
+        function LichSuTaoDon()
+        {
+            alert("Bạn vừa xem lịch sử");
+        }
+        function LichSuMuaHang()
+        {
+            alert("Bạn vừa xem lịch sử mua hàng. ahii");
+        }
+    </script>
+</body>
+
+</html>

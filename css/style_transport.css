@@ -1,0 +1,245 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #ecf0f1;
+}
+h3{
+    margin: 10px 0px;
+}
+p{
+    margin: 10px 0px;
+    font-size: 13px;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+header .top{
+    display: flex;
+    background-image: url('../img/img_header.JPG');
+    background-size: cover;
+    justify-content: space-between;
+    padding:10px 1% 10px 1%;
+    align-items: center;
+}
+header .top a{
+    color:#fff;
+    margin: 5px;
+}
+header .top .logo{
+    width: 15%;
+    
+}
+header .top .search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    background: white;
+    border-radius: 8px;
+}
+header .top .search .category{
+    padding-left: 10px;
+}
+header .top .search .category a{
+    color: #000;
+}
+header .top .search .input{
+    width:  70%;
+}
+header .top .search .input input{
+    width: 89%;
+    border: none;
+    border-left: black 1px solid;
+}
+header .top .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+header .top .info .theodoi{
+    width: 30%;
+    align-items: center;
+    display: flex;
+}
+header .top .info .dangnhap{
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+header .top .info .giohang{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    
+}
+header .top .info .img{
+    width: 40px;
+}
+header .top .info .theodoi .img{
+    width: 80px;
+}
+header .top .info .dangnhap .img img{
+
+}
+header .top .info .giohang .img{
+
+}
+header .top .info .giohang .cart_dropdown{
+
+}
+header .top .info .giohang .cart_dropdown .top{
+
+}
+header .top .info .giohang .cart_dropdown .top .icon{
+
+}
+header .top .info .giohang .cart_dropdown .top .text{
+
+}
+
+header .top .info .giohang .cart_dropdown .mid{
+
+}
+header .top .info .giohang .cart_dropdown .bot{
+
+}
+header .top .info .giohang .img img{}
+
+
+header .top .info a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    font-weight: bold;
+}
+header .top .info a:hover{
+    color: #e5eb90;
+    font-size: 15px;
+}
+header .head{
+    display: flex;
+    padding: 15px 8% 15px 8%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+header .head .logo{
+    width: 40%;
+
+}
+header .head .logo img{
+    width: 120px;
+}
+header .head .ads{
+    width: 60%;
+    
+}
+
+.body{
+    width: 99%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.body .left{
+    width: 20%;
+}
+.body .right{
+    width: 80%;
+    margin-top: 1px;
+}
+.body .left .danhmuc{
+
+}
+.body .left .danhmuc p{
+    font-size: 20px;
+    background-color: #1C71AA;
+
+    color: white;
+    font-weight: bold;
+    margin-top: 1px;
+    margin-bottom: 0;
+    height: 54px;
+    padding-top: 12px;
+}
+.body .left .danhmuc ul{
+    padding: 0;
+    margin: 0;
+}
+.body .left .danhmuc ul li{
+    list-style: none;
+    
+    background-color: #D0CBCA;
+    margin-bottom: 3px;
+    margin-top: 1px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 36px;
+    border: none;
+}
+.body .left .danhmuc ul li a{
+    text-decoration: none;
+    color: #685f5f;
+    font-weight: bold;
+}
+.body .left .danhmuc ul li a:hover{
+    color: #ad9c9c;
+}
+.body .left .sdt{
+    position: fixed;
+    
+    left: 0;
+    bottom: 0;
+    width: 20%;
+}
+.body .left .sdt .img{}
+.body .left .sdt .img img{
+
+}
+.menu{
+    height: 54px;
+    margin: auto;
+    background-color: #BD0141;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul{
+    margin: 0;
+    display: flex;
+    padding: 0;
+}
+.menu ul li{
+    list-style: none;
+    padding: 15px;
+    
+}
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu ul li:hover{
+    background-color:#e74c3c
+}
+.menu .search a{
+    color:#fff;
+    padding: 15px;
+}
+.carousel{
+    width: 100%;
+}
+.slideshow{
+    
+    
+    display: flex;
+    justify-content: space-between;
+    height: 340px;
+    overflow: hidden;
+}

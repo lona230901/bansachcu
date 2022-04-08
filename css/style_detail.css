@@ -1,0 +1,630 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #ecf0f1;
+}
+h3{
+    margin: 10px 0px;
+}
+p{
+    margin: 10px 0px;
+    font-size: 13px;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+header .top{
+    display: flex;
+    background-image: url('../img/img_header.JPG');
+    background-size: cover;
+    justify-content: space-between;
+    padding:10px 1% 10px 1%;
+    align-items: center;
+}
+header .top a{
+    color:#fff;
+    margin: 5px;
+}
+header .top .logo{
+    width: 15%;
+    
+}
+header .top .search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45%;
+    background: white;
+    border-radius: 8px;
+}
+header .top .search .category{
+    padding-left: 10px;
+}
+header .top .search .category a{
+    color: #000;
+}
+header .top .search .input{
+    width:  70%;
+}
+header .top .search .input input{
+    width: 89%;
+    border: none;
+    border-left: black 1px solid;
+}
+header .top .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+header .top .info .theodoi{
+    width: 30%;
+    align-items: center;
+    display: flex;
+}
+header .top .info .dangnhap{
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+header .top .info .giohang{
+    display: flex;
+    width: 30%;
+    align-items: center;
+}
+header .top .info .img{
+    width: 40px;
+}
+header .top .info .theodoi .img{
+    width: 80px;
+}
+header .top .info .dangnhap .img img{
+
+}
+header .top .info .giohang .img{
+
+}
+header .top .info .giohang .img img{}
+
+
+header .top .info a{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    font-weight: bold;
+}
+header .top .info a:hover{
+    color: #e5eb90;
+    font-size: 15px;
+}
+header .head{
+    display: flex;
+    padding: 15px 8% 15px 8%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+header .head .logo{
+    width: 40%;
+
+}
+header .head .logo img{
+    width: 120px;
+}
+header .head .ads{
+    width: 60%;
+    
+}
+
+.body{
+    width: 99%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.body .left{
+   
+}
+.body .right{
+    width: 100%;
+    margin-top: 1px;
+}
+.body .left .danhmuc{
+
+}
+.body .left .danhmuc p{
+    font-size: 20px;
+    background-color: #1C71AA;
+
+    color: white;
+    font-weight: bold;
+    margin-top: 1px;
+    margin-bottom: 0;
+    height: 54px;
+    padding-top: 12px;
+}
+.body .left .danhmuc ul{
+    padding: 0;
+    margin: 0;
+}
+.body .left .danhmuc ul li{
+    list-style: none;
+    
+    background-color: #D0CBCA;
+    margin-bottom: 3px;
+    margin-top: 1px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 36px;
+    border: none;
+}
+.body .left .danhmuc ul li a{
+    text-decoration: none;
+    color: #685f5f;
+    font-weight: bold;
+}
+.body .left .danhmuc ul li a:hover{
+    color: #ad9c9c;
+}
+.body .left .sdt{
+    position: fixed;
+    
+    left: 0;
+    bottom: 0;
+    width: 20%;
+}
+.body .left .sdt .img{}
+.body .left .sdt .img img{
+
+}
+.menu{
+    height: 54px;
+    margin: auto;
+    background-color: #BD0141;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul{
+    margin: 0;
+    display: flex;
+    padding: 0;
+}
+.menu ul li{
+    list-style: none;
+    padding: 15px;
+    
+}
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu ul li:hover{
+    background-color:#e74c3c
+}
+.menu .search a{
+    color:#fff;
+    padding: 15px;
+}
+.carousel{
+    width: 100%;
+}
+.slideshow{
+    
+    
+    display: flex;
+    justify-content: space-between;
+    height: 340px;
+    overflow: hidden;
+}
+.breaking-new{
+    
+    margin: auto;
+}
+.breaking-new h4{
+    padding: 1%;
+    color: red;
+}
+.main{
+    display: flex;
+    
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item-product i{
+    color:red;
+}
+.item-product{
+    width: 24%;
+    background: white;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.item-product .image{
+    display: block;
+}
+.shopping,.view{
+    border: 1px solid blue;
+}
+.item-product h4 a{
+    color: red;
+    font-size: 20px;
+}
+.item-product .thought{
+    text-decoration: line-through;
+    color: red;
+}
+.item-product .price{
+    font-weight: bold;
+    font-size: 16px;
+}
+.adv{
+   
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    background: #fff;
+    padding: 1% 1%;
+}
+.adv .advleft{
+    width: 48%;
+}
+.adv .advright{
+    width: 48%;
+}
+.new{
+   
+}
+.new h4{
+    padding: 1% 0%;
+    color: red;
+    font-weight: bold;
+}
+.trademark{
+   
+    display: flex;
+    justify-content: space-between;
+    background: white;
+}
+.news-judge{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.news-judge .left{
+    width: 49%;
+}
+.news-judge .left h4{
+    padding: 1% 0%;
+    color: red;
+    font-weight: bold;
+}
+.news-judge .left .news{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.news-judge .left .news .img{
+    width: 70%;
+    background-image: url(../img/news.jpg);
+
+}
+.news-judge .left .news .info{
+    margin-left: 20px;
+}
+.news-judge .left .news .info h5{
+    font-weight: bold;
+}
+.news-judge .left .news .shopping{
+    border: 1px solid red;
+    color: #d23131;
+}
+.news-judge .right{
+    width: 49%;
+}
+.news-judge .right h4{
+    padding: 1% 0%;
+    color: red;
+    font-weight: bold;
+}
+.news-judge .right .judge{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.news-judge .right .judge .img{
+    width: 77%;
+
+}
+.news-judge .right .judge .info{
+    margin-left: 20px;
+}
+
+.bot{
+   
+    margin-top: 2%;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bot .left{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    align-items: center;
+    padding: 0px 10px;
+    border: 8px solid red;
+}
+.bot .left i{
+    font-size: 60px;
+    color: red;
+}
+.bot .left p{
+    font-size: 25px;
+    text-align: center;
+}
+.bot .right{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    align-items: center;
+    padding: 0px 10px;
+    border: 8px solid #ff6a00;
+
+}
+.bot .right i{
+    font-size: 60px;
+    color: #ff6a00;
+}
+.bot .right p{
+    font-size: 24px;
+    text-align: center;
+}
+.bot .mid{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    align-items: center;
+    padding: 0px 10px;
+    border: 8px solid #3bc15e;
+}
+.bot .mid i{
+    font-size: 60px;
+    color: #3bc15e;
+}
+.bot .mid p{
+    font-size: 21px;
+    text-align: center;
+}
+footer{
+    margin-top: 2%;
+}
+.footer{
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 8%;
+}
+.footer .ad{
+    width: 24%;
+    margin-right: 10%;
+}
+.footer h6{
+    color: #fff;
+    font-size: 1.3em;
+}
+.footer  p{
+    color: #ad9c9c;
+    font-size: 15px;
+}
+.footer .ad a{
+    padding: 0px 10px;
+}
+.footer .ad a li{
+    font-size: 25px;
+}
+.footer .service{
+    width: 24%;
+}
+.footer  ul{
+    padding: 0;
+    margin: 0;
+}
+.footer ul li{
+    list-style: none;
+    line-height: 30px;
+    
+}
+.footer  ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer .info{
+    width: 24%;
+}
+.footer .dk{
+    width: 24%;
+}
+main .path{
+    background: #fff;
+    
+}
+main .path i{
+
+}
+main .path a{
+    color: #e74c3c;
+}
+main .prisent{
+    
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+main .prisent .left{
+    width: 50%;
+}
+main .prisent .left .img{
+    width: 50%;
+}
+main .prisent .left .img img{
+}
+main .prisent .right{
+    width: 50%;
+}
+main .prisent .right h4{
+    font-weight: bold;
+    color: #757779;
+}
+main .prisent .right .review{
+    display: flex;
+}
+main .prisent .right .review p{
+    margin-right: 11px
+}
+main .prisent .right .review p i{
+    color: #a9a4a4;
+}
+main .prisent .right p .price{
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
+main .prisent .right .choose{
+    display: flex;
+}
+main .prisent .right .choose input{
+    width: 12%;
+}
+main .prisent .right .choose p{
+    margin-left: 15px;
+}
+main .prisent .right .share{
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+main .prisent .right .share p{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+main .prisent .right .share p a{
+    background: #9b86f1;
+    border: 1px solid;
+    border-radius: 50%
+}
+.container{
+   
+    background: #fff;
+    padding: 12px;
+    margin: 0;
+    margin-top: 2%;
+    max-width: 1326px;
+}
+.container h5{
+    font-weight: bold;
+    padding: 15px 0px 0px 0px;
+    margin: 0;
+}
+.container p{
+    font-size: 15px;
+}
+.container .input{
+    width: 50%;
+}
+.container .input .form-submit{
+    display: inline-block;
+    margin: 0;
+}
+.container .input .form-submit input{
+    padding: 8px 25px;
+    background: #e74c3c;
+    border: 1px solid;
+    border-radius: 20px;
+}
+.gt{
+    
+}
+.gt h4{
+    
+    font-weight: bold;
+    color: #e74c3c;
+}
+.gt .sp{
+    display: flex;
+    justify-content: space-between;
+}
+.pay{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 1%;
+    background-color: #fff;
+}
+.pay  p{
+    margin: 0;
+    padding: 25px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.pay h4{
+    font-weight: bold;
+}
+.pay .left{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.pay-sp .img-name{
+    display: flex;
+        
+    align-items: center;
+}
+.pay-sp .img-name .img{
+    width: 30%;
+}
+.pay-sp .img-name h4{
+    font-size: 18px;
+}
+
+.pay .left .pay-price{
+    width: 25%;
+}
+.pay .left .pay-price p{
+    padding: 28px 0px 0px 0px;
+    
+}
+.pay .left .quantity{}
+
+.pay .left .quantity input{
+    width: 50%;
+}
+.pay .left .sum{
+    padding: 0px 0px 0px 5%;
+}
+.pay .right .update{
+    margin-top: 20px;
+    border: 1px solid #d8d2d2;
+}
+.pay .right{
+    width: 38%;
+}
+.pay .right .update h5{
+    font-weight: bold;
+}
+.pay .right .update button{
+    background: #f32d34;
+    border-color: #f32d34;
+    margin-top: 14px;
+}
